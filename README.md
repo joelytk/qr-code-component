@@ -21,11 +21,11 @@ I created a simple QR code component using HTML and CSS.
 
 #### Desktop
 
-![Desktop](./images/screenshot-desktop.png)
+<img src="./images/screenshot-desktop.png" width="1440" height="651" />
 
 #### Mobile
 
-![Mobile](./images/screenshot-mobile.png)
+<img src="./images/screenshot-mobile.png" width="375" height="667" />
 
 ### Links
 
