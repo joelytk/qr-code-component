@@ -20,8 +20,8 @@ I created a simple QR code component using HTML and CSS.
 
 ### Screenshot
 
-![Desktop](./screenshot-desktop.png)
-![Mobile](./screenshot-mobile.png)
+![Desktop](./images/screenshot-desktop.png)
+![Mobile](./images/screenshot-mobile.png)
 
 ### Links
 
