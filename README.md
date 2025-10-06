@@ -5,7 +5,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -18,14 +18,19 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 I created a simple QR code component using HTML and CSS.
 
-### Screenshot
+### Screenshots
+
+#### Desktop
 
 ![Desktop](./images/screenshot-desktop.png)
+
+#### Mobile
+
 ![Mobile](./images/screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor - QR code component](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor - QR code component](https://www.frontendmentor.io/solutions/qr-code-component-using-html-and-css-A1a8RNTyFN)
 - Live Site URL: [QR code component](https://joelytk.github.io/qr-code-component)
 
 ## My process
