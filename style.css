@@ -14,23 +14,23 @@
   --color-white: #ffffff;
 
   /* Spacing (using consistent scale) */
-  --space-100: 0.5rem /* 8px */;
-  --space-200: 1rem /* 16px */;
-  --space-300: 1.5rem /* 24px */;
-  --space-400: 2rem /* 32px */;
-  --space-500: 2.5rem /* 40px */;
+  --space-100: 0.5rem; /* 8px */
+  --space-200: 1rem; /* 16px */
+  --space-300: 1.5rem; /* 24px */
+  --space-400: 2rem; /* 32px */
+  --space-500: 2.5rem; /* 40px */
 
   /* Typography */
   --font-family-base: 'Outfit', sans-serif;
-  --font-size-base: 0.9375rem /* 15px */;
-  --font-size-lg: 1.375rem /* 22px */;
+  --font-size-base: 0.9375rem; /* 15px */
+  --font-size-lg: 1.375rem; /* 22px */
   --line-height-base: 1.4;
   --line-height-heading: 1.2;
 
   /* Radius & Shadows */
-  --radius-md: 0.625rem /* 10px */;
-  --radius-lg: 1.25rem /* 20px */;
-  --shadow-card: 0 25px 25px rgb(0 0 0 / 4.77%);
+  --radius-md: 0.625rem; /* 10px */
+  --radius-lg: 1.25rem; /* 20px */
+  --shadow-card: 0 1.563rem 1.563rem rgb(0 0 0 / 4.77%); /* 0 25px 25px rgba(0, 0, 0, 0.0477) */
 }
 
 /* =========================
@@ -64,7 +64,7 @@ body {
   background-color: var(--color-white);
   border-radius: var(--radius-lg);
   padding: var(--space-200);
-  padding-bottom: var(--space-500);
+  padding-block-end: var(--space-500);
   box-shadow: var(--shadow-card);
   font-family: var(--font-family-base);
   text-align: center;
@@ -75,7 +75,7 @@ body {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-md);
-  margin-bottom: var(--space-300);
+  margin-block-end: var(--space-300);
 }
 
 /* =========================
@@ -88,8 +88,8 @@ body {
   text-align: center;
   color: var(--color-slate-900);
   margin: 0 auto;
-  margin-bottom: var(--space-200);
-  max-width: 16rem /* 256px */;
+  margin-block-end: var(--space-200);
+  max-width: 16rem; /* 256px */
 }
 
 .card-text {
@@ -98,7 +98,7 @@ body {
   line-height: var(--line-height-base);
   text-align: center;
   color: var(--color-slate-500);
-  letter-spacing: 0.2px;
+  letter-spacing: 0.013rem; /* 0.2px */
   margin: 0 auto;
-  max-width: 16rem /* 256px */;
+  max-width: 16rem; /* 256px */
 }
