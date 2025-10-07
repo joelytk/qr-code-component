@@ -1,20 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+/* =========================
+  Fonts
+  ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+/* =========================
+  Design Tokens
+  ========================= */
 :root {
-  --slate-900: #1f314f;
-  --slate-500: #68778d;
-  --slate-300: #d5e1ef;
-  --white: #ffffff;
-  --spacing-500: 40px;
-  --spacing-300: 24px;
-  --spacing-200: 16px;
+  /* Colors */
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
+  --color-white: #ffffff;
+
+  /* Spacing (using consistent scale) */
+  --space-100: 0.5rem /* 8px */;
+  --space-200: 1rem /* 16px */;
+  --space-300: 1.5rem /* 24px */;
+  --space-400: 2rem /* 32px */;
+  --space-500: 2.5rem /* 40px */;
+
+  /* Typography */
+  --font-family-base: 'Outfit', sans-serif;
+  --font-size-base: 0.9375rem /* 15px */;
+  --font-size-lg: 1.375rem /* 22px */;
+  --line-height-base: 1.4;
+  --line-height-heading: 1.2;
+
+  /* Radius & Shadows */
+  --radius-md: 0.625rem /* 10px */;
+  --radius-lg: 1.25rem /* 20px */;
+  --shadow-card: 0 25px 25px rgb(0 0 0 / 4.77%);
 }
 
-* {
+/* =========================
+  Global Reset
+  ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -22,42 +49,56 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--slate-300);
-  position: relative;
+  background-color: var(--color-slate-300);
+
+  /* Improve font rendering */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
+/* =========================
+  Card Component
+  ========================= */
 .card {
-  width: 320px;
-  background-color: var(--white);
-  border-radius: 20px;
+  width: 20rem; /* 320px */
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-200);
+  padding-bottom: var(--space-500);
+  box-shadow: var(--shadow-card);
+  font-family: var(--font-family-base);
   text-align: center;
-  padding: var(--spacing-200);
-  padding-bottom: var(--spacing-500);
-  box-shadow: 0px 25px 25px 0px rgb(0 0 0 / 0.0477);
 }
 
-.card .card-img {
-  width: 288px;
+.card-img {
+  display: block; /* Removes small inline gap under images */
+  width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 10px;
-  margin-bottom: var(--spacing-300);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-300);
 }
 
-.card .card-title {
-  font-family: 'Outfit', sans-serif;
+/* =========================
+  Typography
+  ========================= */
+.card-title {
   font-weight: 700;
-  font-size: 22px;
-  line-height: 120%;
-  letter-spacing: 0px;
-  margin-bottom: var(--spacing-200);
-  color: var(--slate-900);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-heading);
+  text-align: center;
+  color: var(--color-slate-900);
+  margin: 0 auto;
+  margin-bottom: var(--space-200);
+  max-width: 16rem /* 256px */;
 }
 
-.card .card-text {
-  font-family: 'Outfit', sans-serif;
+.card-text {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 140%;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  text-align: center;
+  color: var(--color-slate-500);
   letter-spacing: 0.2px;
-  color: var(--slate-500);
+  margin: 0 auto;
+  max-width: 16rem /* 256px */;
 }
